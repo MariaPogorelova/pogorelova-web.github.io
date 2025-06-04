@@ -1,0 +1,269 @@
+/* Базовые стили и сброс */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background-color: #fff8f0;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Header */
+.header {
+  background-color: #6f4e37;
+  color: #fff;
+  padding: 20px 0;
+}
+
+.header__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__logo {
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+
+.header__logo--highlight {
+  color: #d2691e;
+}
+
+.nav__list {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav__link {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+.nav__link:hover,
+.nav__link:focus {
+  color: #d2691e;
+}
+
+/* Hero */
+.hero {
+  background: url('https://images.unsplash.com/photo-1509042239860-f550ce710b93?auto=format&fit=crop&w=1350&q=80') center/cover no-repeat;
+  color: #fff;
+  padding: 100px 0;
+  text-align: center;
+  text-shadow: 1px 1px 5px rgba(0,0,0,0.7);
+}
+
+.hero__title {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+.hero__subtitle {
+  font-size: 1.5rem;
+}
+
+/* Sections */
+.section-title {
+  font-size: 2rem;
+  color: #6f4e37;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.about__text {
+  max-width: 700px;
+  margin: 0 auto;
+  font-size: 1.1rem;
+  color: #4b3b2b;
+  text-align: center;
+}
+
+/* Menu */
+.menu__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  list-style: none;
+}
+
+.menu__item {
+  background-color: #f5ede7;
+  border-radius: 8px;
+  padding: 20px;
+  width: 250px;
+  box-shadow: 0 4px 6px rgba(111, 78, 55, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.menu__item-title {
+  font-size: 1.3rem;
+  margin-bottom: 10px;
+  color: #6f4e37;
+}
+
+.menu__item-description {
+  font-size: 1rem;
+  margin-bottom: 15px;
+  color: #7a5a3e;
+  text-align: center;
+}
+
+.menu__item-price {
+  font-weight: 700;
+  color: #d2691e;
+  font-size: 1.2rem;
+}
+
+/* Contacts */
+.contacts__container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.contacts__info {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  margin-bottom: 40px;
+  justify-content: space-between;
+}
+
+.contacts__address {
+  flex: 1 1 300px;
+  font-style: normal;
+  font-size: 1.1rem;
+  color: #4b3b2b;
+  line-height: 1.5;
+}
+
+.contacts__address a {
+  color: #d2691e;
+  text-decoration: none;
+}
+
+.contacts__address a:hover,
+.contacts__address a:focus {
+  text-decoration: underline;
+}
+
+.contacts__map {
+  flex: 1 1 400px;
+  height: 300px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(111, 78, 55, 0.2);
+}
+
+/* Feedback form */
+.feedback-form {
+  background-color: #f5ede7;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(111, 78, 55, 0.1);
+  max-width: 500px;
+  margin: 0 auto 40px;
+}
+
+.feedback-form__title {
+  font-size: 1.5rem;
+  color: #6f4e37;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.feedback-form__label {
+  display: block;
+  margin-bottom: 5px;
+  color: #4b3b2b;
+  font-weight: 600;
+}
+
+.feedback-form__input,
+.feedback-form__textarea {
+  width: 100%;
+  padding: 8px 10px;
+  margin-bottom: 15px;
+  border: 1px solid #d2b48c;
+  border-radius: 4px;
+  font-size: 1rem;
+  font-family: inherit;
+  resize: vertical;
+}
+
+.feedback-form__input:focus,
+.feedback-form__textarea:focus {
+  outline: none;
+  border-color: #d2691e;
+  box-shadow: 0 0 5px #d2691e;
+}
+
+.feedback-form__button {
+  background-color: #d2691e;
+  color: #fff;
+  border: none;
+  padding: 12px 20px;
+  font-size: 1.1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 100%;
+  font-weight: 700;
+  transition: background-color 0.3s ease;
+}
+
+.feedback-form__button:hover,
+.feedback-form__button:focus {
+  background-color: #a0522d;
+}
+
+.feedback-form__status {
+  margin-top: 10px;
+  font-weight: 600;
+  text-align: center;
+  min-height: 1.2em;
+}
+
+/* Footer */
+.footer {
+  background-color: #6f4e37;
+  color: #fff;
+  text-align: center;
+  padding: 15px 0;
+  font-size: 0.9rem;
+}
+
+/* Адаптивность */
+@media (max-width: 768px) {
+  .nav__list {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .menu__list {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contacts__info {
+    flex-direction: column;
+  }
+
+  .contacts__map {
+    height: 250px;
+  }
+}
